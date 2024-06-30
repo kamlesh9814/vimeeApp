@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingTop="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/UnClickedIV"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:padding="@dimen/_3sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty_check_box" />
+
+    <TextView
+        android:id="@+id/VideoGamesTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:text="Video Games"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:textSize="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/UnClickedIV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/UnClickedIV"
+        app:layout_constraintTop_toTopOf="@+id/UnClickedIV" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/line_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UnClickedIV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

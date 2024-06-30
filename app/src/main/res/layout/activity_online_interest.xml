@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OnlineInterestActivity">
+
+    <ImageView
+        android:id="@+id/backIV"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/back"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+
+        />
+
+    <TextView
+        android:id="@+id/DateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Online"
+        android:textColor="@color/app_color"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layout_constraintStart_toStartOf="@+id/backIV"
+        app:layout_constraintTop_toBottomOf="@+id/backIV" />
+
+    <TextView
+        android:id="@+id/BirthTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Interest?"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintStart_toStartOf="@+id/DateTV"
+        app:layout_constraintTop_toBottomOf="@+id/DateTV" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/BirthdayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BirthTV"
+        >
+
+        <TextView
+            android:id="@+id/tvNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Select Interest"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/etNameUser"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/select_interest"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/etNameUser"
+            app:layout_constraintTop_toTopOf="@+id/etNameUser" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/drop_done"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/etNameUser"
+            app:layout_constraintTop_toTopOf="@+id/etNameUser" />
+
+        <EditText
+            android:id="@+id/etNameUser"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/cornours_drawable"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:clickable="false"
+            android:focusable="false"
+            android:drawablePadding="10dp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="45dp"
+            android:paddingEnd="50dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/tvNameUser" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/ContinueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/custom_round_corner_app_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BirthdayLayout">
+
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="end"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/ContinueLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/wave"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

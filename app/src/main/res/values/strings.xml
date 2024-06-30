@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Vimee</string>
+    <string name="please_enter_your_registered_email_address_to_recover_your_password">Please enter your registered email address to recover your password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="my_strength_is_self_motivated_and_hard_work_disciplined_person">My strength is self-motivated and hard work, disciplined person.</string>
+    <string name="your_profile_is_set">Your Profile is set!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="payment_will_be_charged_to_itunes_account_at_confirmation_of_purchase_subscription_automatically_renews_unless_auto_renew_is_turned_off_at_least_24_hours_before_the_end_of_the_current_period_account_will_be_charged_for_renewal_within_24_hours_prior_to_the_end_of_the_current_period_and_identify_the_cost_of_the_renewal_subscriptions_may_be_managed_by_the_user_and_auto_renewal_may_be_turned_off_by_going_to_the_user_s_account_settings_after_purchase_any_unused_portion_of_a_free_trial_period_if_offered_will_be_forfeited_when_the_user_purchases_a_subscription_to_that_publication_where_applicable">Payment will be charged to iTunes Account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period. Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal. Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user\'s Account Settings after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.</string>
+    <string name="chat">Chat</string>
+    <string name="birthday">Birthday</string>
+    <string name="why_do_you_want_to_spend_time_online">Why do you want to spend time Online</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="write_about_yourself">Write about yourself</string>
+    <string name="sign_in">Sign In</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="edit_photo">Edit Photo</string>
+</resources>

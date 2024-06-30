@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvSubscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/EditProfileIV"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/pencil"
+            android:padding="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSubscription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvSubscription" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/line_view"
+            app:layout_constraintTop_toBottomOf="@id/tvSubscription" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/girl"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/ProfileNameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Jules002"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_image"
+            app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+        <TextView
+            android:id="@+id/TVEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="julesboutin@gmail.com"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/ProfileNameTV"
+            app:layout_constraintStart_toStartOf="@+id/ProfileNameTV"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileNameTV" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@color/line_view"
+            app:layout_constraintTop_toBottomOf="@id/profile_image"/>
+
+        <ImageView
+            android:id="@+id/ivManage"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:src="@drawable/update"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            />
+
+        <TextView
+            android:id="@+id/UpgradeSubscriptionTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:text="Update Subscription Plan"
+            app:layout_constraintBottom_toBottomOf="@+id/ivManage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivManage"
+            app:layout_constraintTop_toTopOf="@+id/ivManage" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/line_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/UpgradeSubscriptionTV"
+            app:layout_constraintTop_toBottomOf="@id/UpgradeSubscriptionTV" />
+
+
+        <ImageView
+            android:id="@+id/ivAboutUs"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:src="@drawable/about_us"
+            app:layout_constraintTop_toBottomOf="@+id/view3"
+            />
+
+        <TextView
+            android:id="@+id/tvAboutUs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="About Us"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivAboutUs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivAboutUs"
+            app:layout_constraintTop_toTopOf="@+id/ivAboutUs" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/line_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvAboutUs"
+            app:layout_constraintTop_toBottomOf="@id/tvAboutUs" />
+
+
+        <ImageView
+            android:id="@+id/ivMyProject"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/change_password"
+            android:layout_marginStart="@dimen/_13sdp"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            />
+
+        <TextView
+            android:id="@+id/ChangePasswordTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Change Password"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivMyProject"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivMyProject"
+            app:layout_constraintTop_toTopOf="@+id/ivMyProject" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/line_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/ChangePasswordTV"
+            app:layout_constraintTop_toBottomOf="@id/ChangePasswordTV" />
+
+        <ImageView
+            android:id="@+id/ivTearms"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:src="@drawable/tearms"
+            app:layout_constraintTop_toBottomOf="@+id/view6"
+            />
+
+        <TextView
+            android:id="@+id/tvTearms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Terms &amp; Condtions"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTearms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivTearms"
+            app:layout_constraintTop_toTopOf="@+id/ivTearms" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/line_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvTearms"
+            app:layout_constraintTop_toBottomOf="@id/tvTearms" />
+
+        <ImageView
+            android:id="@+id/ivPrivacy"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:src="@drawable/privacy"
+            app:layout_constraintTop_toBottomOf="@+id/view7"
+            />
+
+        <TextView
+            android:id="@+id/tvPrivacyPolicy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Privacy Policy"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivPrivacy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivPrivacy"
+            app:layout_constraintTop_toTopOf="@+id/ivPrivacy" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/line_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvPrivacyPolicy"
+            app:layout_constraintTop_toBottomOf="@id/tvPrivacyPolicy" />
+
+        <ImageView
+            android:id="@+id/ivLogout"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:src="@drawable/logout"
+            app:layout_constraintTop_toBottomOf="@+id/view8"
+            />
+
+
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Logout"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivLogout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivLogout"
+            app:layout_constraintTop_toTopOf="@+id/ivLogout" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/line_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvLogout"
+            app:layout_constraintTop_toBottomOf="@id/tvLogout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

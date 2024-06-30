@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NativeLanguageActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <ImageView
+                android:id="@+id/backIV"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <TextView
+                android:id="@+id/ProvideTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="What is"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintStart_toStartOf="@+id/backIV"
+                app:layout_constraintTop_toBottomOf="@+id/backIV" />
+
+            <TextView
+                android:id="@+id/InformationTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text=" your\n\ Native\n\ Language?"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ProvideTV" />
+
+
+            <RelativeLayout
+                android:id="@+id/HavingFunLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/have_fun_drawable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/InformationTV">
+
+                <TextView
+                    android:id="@+id/signUpTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Magyar"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/_12ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ContinueLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/working_drawable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/HavingFunLayout">
+
+                <TextView
+                    android:id="@+id/WorkingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Deutsch"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/_12ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/LearningLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/working_drawable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ContinueLayout">
+
+                <TextView
+                    android:id="@+id/LearningTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="English(UK)"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/_12ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/SocializingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/working_drawable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LearningLayout">
+
+                <TextView
+                    android:id="@+id/SocializingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Francais (France)"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/_12ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ContinueLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:background="@drawable/custom_round_corner_app_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SocializingLayout">
+
+                <TextView
+                    android:id="@+id/ContinueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/wave"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ContinueLayout1"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
